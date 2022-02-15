@@ -1,8 +1,14 @@
-body
-{
-    margin : 40px ;
+body {
+    margin: 40px;
+    font-family: 'Raleway', sans-serif;
 }
-
+h1,h2,h3,h4{
+    /* font-weight: 600; */
+}
+strong{
+    /* font-weight: 650; */
+}
+/* Header */
 nav {
     display: flex;
     justify-content: space-between;
@@ -12,5 +18,257 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap : 20px;
+    gap: 20px;
+}
+
+h1, header p {
+    margin: 5px;
+}
+/* Main */
+
+/* Barre de recherche*/
+
+.barrerecherche {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 200px;
+    height: 60px;
+    background-color: #0065fc;
+    border-radius: 0 20px 25px 0px;
+    color: rgb(255, 255, 255)
+}
+
+.searchzone {
+    height: 60px;
+    width: 300px;
+    text-align: center;
+    border: 0.01px black solid
+}
+
+.fa-location-dot {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Barre Filtre */
+
+.barrefiltre {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btneco, .btnfamily, .btnlove, .btnpet {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+ 
+}
+.logofiltre{
+    font-size: 26px;
+    color: #0065fc;
+    height: 40px;
+    width: 40px;
+    border: 2px transparent solid;
+    background-color: #deebff;
+    border-radius: 30px;
+}
+
+
+
+/* Infos */
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logoinfo{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: #0065fc;
+    border: 1px #d9d9d9 solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+
+/* Hébergements */
+
+.hebergementetpopulaire {
+    width: 100%;
+    margin: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.hebergement {
+    width: 70%;
+    height: 850px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+.hebergement article{
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #e2e2e2;
+    width: 30%;
+    height: 30%;
+
+}
+
+  
+.boxarticle article img{
+    width: 100%;
+    height: 8vw;
+    border-radius: 20px 20px 0px 0px ;
+    object-fit: cover;
+}
+.boxarticle {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fullstar {
+    color: #0065fc;
+}
+
+.emptystar {
+    color: #d9d9d9;
+}
+
+
+/* Populaires*/
+#populaire{
+    width: 28%;
+    height: 850px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#titre-populaires{
+    display: flex;
+    align-items: center;
+    gap: 150px
+}
+#titre-populaires i{
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    font-weight: 800;
+
+}
+
+#populaire article{
+    display: flex;
+    width: 85%;
+    height: 28%;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 8px #e2e2e2;
+}
+
+#populaire article img{
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px ;
+    width: 12vw;
+}
+h2{
+    font-weight: bolder ;
+}
+
+.hebergementetpopulaire, #activite{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Activités*/
+
+#activite{
+    width: 100%;
+    height: 600px;
+    margin: 0px 30px 0px 30px;
+    /* background-color: aqua; */
+}
+#box-activite{
+    display: flex;
+    justify-content: space-between;
+
+}
+#activite .simple{
+    width: 22%;
+    height: 80%;
+}
+
+.double{
+    width: 22%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+#activite article{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 8px #e2e2e2;
+}
+
+.double img{
+    width: 100%;
+    object-fit: cover;
+    height: 10vw;
+    border-radius: 20px 20px 0px 0px ;
+}
+ .simple img{
+    width: 100%;
+    object-fit: cover;
+    height: 10vw;
+    border-radius: 20px 20px 0px 0px ;
+}
+
+#activite article img, h4{
+    margin: 0px 0px 5px 0px;
+}
+
+
+
+/* Footer */
+
+footer{
+    width : 100%;
+    background-color: #f2f2f2;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+
+}
+footer ul{
+    list-style: none;
+}
+footer div{
+    text-align: left;
 }
