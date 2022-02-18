@@ -1,86 +1,204 @@
 body {
-    margin: 40px;
+
     font-family: 'Raleway', sans-serif;
+    margin: 0px 0px 0px 0px;
 }
-h1,h2,h3,h4{
-    /* font-weight: 600; */
-}
-strong{
-    /* font-weight: 650; */
-}
+
+
+
 /* Header */
+
+header {
+    margin: 0px 40px 0px 40px;
+}
+
 nav {
+    margin: 0px 20px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+}
+
+nav img {
+    width: 110px;
+   
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 400px;
+    height: 100%;
+    margin: 0;
+
+}
+
+nav li {
+    display: block;
+    width: 50%;
+    height: 150px;
+    line-height: 150px;
+}
+
+nav a {
+    display: block;
+     color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border-top: #ffffff 3px solid;
+    
+
+
+  
+
+
+}
+
+nav a:hover, nav a:active {
+    color: #0065fc;
+    border-top: #0065fc 3px solid;
+
+}
+
+
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 h1, header p {
     margin: 5px;
 }
+
 /* Main */
+main {
+    margin: 20px;
+}
 
 /* Barre de recherche*/
 
 .barrerecherche {
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 
-.search {
+#btn-recherche {
     width: 200px;
     height: 60px;
     background-color: #0065fc;
     border-radius: 0 20px 25px 0px;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+
 }
 
-.searchzone {
+input::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+#champ-recherche {
     height: 60px;
     width: 300px;
+    border-top: 1px rgb(242, 242, 242) solid;
+    border-right: 1px transparent solid;
+    border-bottom: 1px rgb(242, 242, 242)solid;
+    border-left: 1px transparent solid;
+    padding: 0;
+    font-size: 24px;
     text-align: center;
-    border: 0.01px black solid
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: black;
 }
 
-.fa-location-dot {
-    font-size: 40px;
-    width: 60px;
+.barrerecherche i {
+    font-size: 28px;
+    width: 70px;
     height: 60px;
     background-color: rgb(242, 242, 242);
     border-radius: 25px 0 0 25px;
     text-align: center;
     align-items: center;
+    line-height: 58px;
+    border-top: 1px rgb(242, 242, 242) solid;
+    border-left: 1px rgb(242, 242, 242) solid;
+    border-bottom: 1px rgb(242, 242, 242)solid;
+
 }
 
 /* Barre Filtre */
 
 .barrefiltre {
-    height: 90px;
+
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-top: 40px;
+
+
 }
 
-.btneco, .btnfamily, .btnlove, .btnpet {
+.bouton {
+
     display: flex;
-    text-align: center;
-    gap: 10px;
- 
-}
-.logofiltre{
-    font-size: 26px;
-    color: #0065fc;
+    align-items: center;
+    font-weight: 700;
     height: 40px;
-    width: 40px;
-    border: 2px transparent solid;
-    background-color: #deebff;
-    border-radius: 30px;
+
+
+}
+
+.bouton h3 {
+    border-top: 2px #d9d9d9 solid;
+    border-right: 2px #d9d9d9 solid;
+    border-bottom: 2px #d9d9d9 solid;
+    border-radius: 0px 20px 20px 0px;
+    height: 40px;
+    line-height: 40px;
+    z-index: -1;
+    width: 220px;
+    text-align: center;
+
+
+}
+
+.logofiltre {
+
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 22px;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin-right: -22px;
+
+}
+
+.barrefiltre a:hover {
+  
+    text-decoration: none;
+    color: #000000;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    z-index: 0;
+}
+.barrefiltre a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -93,14 +211,16 @@ h1, header p {
     align-items: center;
     gap: 20px;
 }
-.logoinfo{
+
+.logoinfo {
     width: 25px;
     height: 25px;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
     color: #0065fc;
     border: 1px #d9d9d9 solid;
     border-radius: 20px;
-    text-align: center;
+    line-height: 25px;
 }
 
 
@@ -108,36 +228,49 @@ h1, header p {
 
 /* Hébergements */
 
+
+h2{
+    margin-left: 40px;
+}
+
 .hebergementetpopulaire {
     width: 100%;
     margin: 0px 30px 0px 30px;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 .hebergement {
-    width: 70%;
+    width: 68%;
     height: 850px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
-.hebergement article{
+
+.boxarticle article {
     background-color: white;
     border: 2px solid transparent;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #e2e2e2;
     width: 30%;
-    height: 30%;
+    height: 40%;
+    object-fit: content;
+    
 
 }
 
-  
-.boxarticle article img{
+.hotel * {
+    overflow: hidden;
+    object-fit: content;
+}
+
+.boxarticle article img {
     width: 100%;
     height: 8vw;
-    border-radius: 20px 20px 0px 0px ;
-    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: content;
 }
+
 .boxarticle {
     height: 100%;
     display: flex;
@@ -153,9 +286,13 @@ h1, header p {
     color: #d9d9d9;
 }
 
+.note{
+    display: block;
+  
+}
 
 /* Populaires*/
-#populaire{
+#populaire {
     width: 28%;
     height: 850px;
     background-color: #f2f2f2;
@@ -165,19 +302,21 @@ h1, header p {
     justify-content: space-between;
     align-items: center;
 }
-#titre-populaires{
+
+#titre-populaires {
     display: flex;
     align-items: center;
     gap: 150px
 }
-#titre-populaires i{
+
+#titre-populaires i {
     border-left: 4px solid black;
     border-bottom: 4px solid black;
     font-weight: 800;
 
 }
 
-#populaire article{
+#populaire article {
     display: flex;
     width: 85%;
     height: 28%;
@@ -187,39 +326,47 @@ h1, header p {
     box-shadow: 1px 1px 8px #e2e2e2;
 }
 
-#populaire article img{
+#populaire article img {
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px ;
+    border-radius: 20px 0px 0px 20px;
     width: 12vw;
 }
-h2{
-    font-weight: bolder ;
+
+h2 {
+    font-weight: bolder;
 }
 
-.hebergementetpopulaire, #activite{
+.hebergementetpopulaire, #activite {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+article p, article i {
+
+    margin-bottom: 70px;
+}
+
 /* Activités*/
 
-#activite{
+#activite {
     width: 100%;
     height: 600px;
     margin: 0px 30px 0px 30px;
     /* background-color: aqua; */
 }
-#box-activite{
+
+#box-activite {
     display: flex;
     justify-content: space-between;
 
 }
-#activite .simple{
+
+#activite .simple {
     width: 22%;
     height: 80%;
 }
 
-.double{
+.double {
     width: 22%;
     height: 40%;
     display: flex;
@@ -229,27 +376,28 @@ h2{
 
 }
 
-#activite article{
+#activite article {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     border: 2px solid transparent;
     box-shadow: 1px 1px 8px #e2e2e2;
 }
 
-.double img{
+.double img {
     width: 100%;
     object-fit: cover;
     height: 10vw;
-    border-radius: 20px 20px 0px 0px ;
-}
- .simple img{
-    width: 100%;
-    object-fit: cover;
-    height: 10vw;
-    border-radius: 20px 20px 0px 0px ;
+    border-radius: 20px 20px 0px 0px;
 }
 
-#activite article img, h4{
+.simple img {
+    width: 100%;
+    object-fit: cover;
+    height: 10vw;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#activite article img, h4 {
     margin: 0px 0px 5px 0px;
 }
 
@@ -257,8 +405,8 @@ h2{
 
 /* Footer */
 
-footer{
-    width : 100%;
+footer {
+    width: 100%;
     background-color: #f2f2f2;
     margin: 0px;
     display: flex;
@@ -266,9 +414,11 @@ footer{
     align-items: left;
 
 }
-footer ul{
+
+footer ul {
     list-style: none;
 }
-footer div{
+
+footer div {
     text-align: left;
 }
